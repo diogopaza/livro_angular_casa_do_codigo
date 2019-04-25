@@ -1,0 +1,38 @@
+
+<script>
+
+    /*
+    // arrow function
+    const somar = (x,y = 1) => x+y
+
+    alert(somar(5))
+    */
+
+    //destructuring
+    meu_array =[1,2,3]
+    const[a,b,c] = meu_array
+    console.log(a)
+    console.log(b)
+    console.log(c)
+
+    //destructiong com objetos
+    meuObjeto = {livro:'Angular', autor:'Diogo Paza'}
+    const{livro, autor} = meuObjeto
+    console.log(livro)
+    console.log(autor)
+
+    //função map
+    //itera em cada item do array
+    //sempre que precisar fazer manipulação com cada elemento de um array é aconselhável usar o método map
+    arrayNumeros =[2,3,4,5,6]
+    novoValor = arrayNumeros.map(function(num){
+        return num *2
+    })
+    console.log(novoValor)
+
+    novoValorArrowFunction = arrayNumeros.map(num => num*2)
+    console.log(novoValorArrowFunction)
+
+
+
+</script>
