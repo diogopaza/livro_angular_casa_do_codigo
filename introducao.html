@@ -33,6 +33,27 @@
     novoValorArrowFunction = arrayNumeros.map(num => num*2)
     console.log(novoValorArrowFunction)
 
+    //filter
+    //usado para saber quais elementos satisfazem a um contexto
+    nomes =[ 'jorge','carlos','roberto','lucas']
+    novoNome = nomes.filter(function(nome){
+        return nome.includes('a')
+    })
+    console.log(novoNome)
+
+    //reduce
+    //junta todos os elementos em um so
+    novoNomeReduce = nomes.reduce((acumulado, nome)=> acumulado +' - '+ nome)
+    console.log(novoNomeReduce)
+
+    valores = [10,20,30,40,50]
+
+    valorTotal = valores.reduce((total, valor) => total + valor )
+    console.log(valorTotal)
+
+
+    
+    
 
 
 </script>
