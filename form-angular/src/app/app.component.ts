@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'form-angular';
+  
+  user: User;
+
+  constructor(){
+    this.user = new User
+    this.user.name = "Foo Bar"
+    this.user.designation = "Software"
+    this.user.address = "1000 Street"
+    this.user.phone = [
+      '123-123',
+      '956-956',
+    ]
+  }
 }

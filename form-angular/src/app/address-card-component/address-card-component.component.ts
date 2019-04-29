@@ -7,12 +7,20 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class AddressCardComponentComponent implements OnInit {
 
-  @Input('user') user: User;
+  //@Input('user') user: User;
   isCollapsed : boolean = true
   
   constructor() { }
 
+  
+  toggleCollapse(){
+
+    this.isCollapsed = !this.isCollapsed
+  }
+  
   ngOnInit() {
   }
+
+
 
 }
