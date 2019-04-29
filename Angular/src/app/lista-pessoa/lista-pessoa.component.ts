@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListaPessoaComponent implements OnInit {
 
   pessoas: string []
+  nome: string = "Diogo"
   constructor() { }
 
   ngOnInit() {

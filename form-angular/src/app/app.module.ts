@@ -3,17 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListaPessoaComponent } from './lista-pessoa/lista-pessoa.component';
+import { AddressCardComponentComponent } from './address-card-component/address-card-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaPessoaComponent
+    AddressCardComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
