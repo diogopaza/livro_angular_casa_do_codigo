@@ -3,4 +3,6 @@
   <li *ngFor="let pessoa of pessoas">
     {{pessoa}}
   </li>
+  <label><input type="text" [(ngModel)]="nome"></label>
+  <label><button (click)="enviarNome()">Enviar nome</button></label>
 </ul>

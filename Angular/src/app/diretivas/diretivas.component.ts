@@ -8,7 +8,8 @@ import { PessoaServiceService } from '../diretivas/pessoa-service.service';
   providers:[PessoaServiceService]
 })
 export class DiretivasComponent implements OnInit {
- 
+  
+  nome : string
   pessoas: string[]
   
   
@@ -19,6 +20,10 @@ export class DiretivasComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.pessoas)
+  }
+
+  enviarNome(){
+    this.service.setPessoas(this.nome)
   }
 
 }

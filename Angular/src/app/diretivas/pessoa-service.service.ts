@@ -5,10 +5,18 @@ import { Injectable } from '@angular/core';
 })
 export class PessoaServiceService {
 
+  nomePessoas : string[] = ['Joao','Beto',"tulio","luano"]
+
   constructor() { }
 
   getPessoas(): string[]{
-    return ['Joao','Beto',"tulio","luano"]
+    return this.nomePessoas
   }
+
+  setPessoas(nome: string): void{
+    this.nomePessoas.push(nome)
+  } 
+
+
 
 }
