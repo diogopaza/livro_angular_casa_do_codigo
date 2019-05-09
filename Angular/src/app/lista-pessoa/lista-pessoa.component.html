@@ -1,8 +1,12 @@
 <h2>Lista Pessoas</h2>
 
-<ul>
-  <li></li>
+<ul *ngFor="let p of lista; let i=index">
+  <li>{{p.id}} - {{p.name}}</li>
 </ul>
+<div>
+  <button>Alerta</button>
+</div>
+<button (click)="listar()">Listar</button>
 
-<input  type="text">
+<input [(ngModel)]="nome">
 <p>{{nome}}</p>
